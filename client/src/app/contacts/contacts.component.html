@@ -1,3 +1,8 @@
-<p>
-  contacts works!
-</p>
+<div class = "Container">
+  <div *ngFor = "let contact of contacts">
+    {{contact.first_name}}
+    {{contact.last_name}}
+    {{contact.phone}}
+    <input type="button" (click)="deleteContact(contact._id)" value="Delete">
+  </div>
+</div>
